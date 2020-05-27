@@ -70,7 +70,7 @@ typedef struct {
 state *state_new();
 
 // Updates the state of the game to the next frame.
-void state_update(level *lvl, state *sta);
+void state_update(level *lvl, state *sta, int *counter);
 
 // Put enemies at random in the state until it has n_enemies enemies.
 void state_populate_random(level *lvl, state *sta, int n_enemies);
